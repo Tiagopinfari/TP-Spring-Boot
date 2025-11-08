@@ -71,11 +71,11 @@ Capturas de pantalla de la consola para ambas ejecuciones, demostrando las difer
 ## 🧠 Conclusiones Personales
 Este proyecto demostró la aplicación exitosa de los fundamentos de Spring Boot para construir una aplicación modular y adaptable.
 
-* Estructura y Acoplamiento: Se implementó una arquitectura limpia utilizando estereotipos (@Service, @Repository) y la inyección de dependencias por constructor, lo que resultó en un código desacoplado y fácil de mantener.
+* Estructura y Acoplamiento: Se implementó una arquitectura limpia utilizando estereotipos (`@Service`, `@Repository`) y la inyección de dependencias por constructor, lo que resultó en un código desacoplado y fácil de mantener.
 
-* Adaptabilidad con Profiles: El uso de Profiles (dev y prod) y el manejo de propiedades con @Value permitió adaptar la aplicación de forma dinámica, cambiando configuraciones (límites de tareas) y el comportamiento del servicio (MensajeService condicional) según el entorno activo.
+* Adaptabilidad con Profiles: El uso de Profiles (`dev` y `prod`) y el manejo de propiedades con `@Value` permitió adaptar la aplicación de forma dinámica, cambiando configuraciones (límites de tareas) y el comportamiento del servicio (`MensajeService` condicional) según el entorno activo.
 
-* Integración: La interfaz CommandLineRunner se utilizó eficazmente para orquestar la lógica de inicio y demostrar la integración de todos los componentes inyectados.
+* Integración: La interfaz `CommandLineRunner` se utilizó eficazmente para orquestar la lógica de inicio y demostrar la integración de todos los componentes inyectados.
 
 En resumen, el trabajo práctico cumplió con el objetivo de simular una práctica de desarrollo profesional, enfatizando el diseño modular y la gestión flexible de entornos.
 
