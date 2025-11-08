@@ -47,14 +47,16 @@ Este es el perfil activo por defecto. Utiliza un límite bajo de tareas, activa 
 #### Perfil de Producción (prod)
 Para activar este perfil, debemos sobrescribir la propiedad spring.profiles.active al iniciar. Deshabilita las estadísticas, tiene un límite alto de tareas y un logging restringido (ERROR).
 
+***
+
 ## 🖼️ Capturas de Pantalla
 Capturas de pantalla de la consola para ambas ejecuciones, demostrando las diferencias en:
 
-Mensajes de bienvenida/despedida (MensajeService condicional).
+* Mensajes de bienvenida/despedida (MensajeService condicional).
 
-Configuración de propiedades (app.max-tareas y app.mostrar-estadisticas).
+* Configuración de propiedades (app.max-tareas y app.mostrar-estadisticas).
 
-Nivel de logging (DEBUG vs. ERROR).
+* Nivel de logging (DEBUG vs. ERROR).
 
 #### Ejecución en Profile DEV
 <img width="1802" height="847" alt="spring profiles active=dev 1" src="https://github.com/user-attachments/assets/13c600b9-a9f0-4368-beeb-58db9ac84cce" />
@@ -64,16 +66,20 @@ Nivel de logging (DEBUG vs. ERROR).
 <img width="1790" height="805" alt="spring profiles active=prod 1" src="https://github.com/user-attachments/assets/aa3b7ae4-9fe5-4823-816c-0ecfbf544507" />
 <img width="1788" height="648" alt="spring profiles active=prod 2" src="https://github.com/user-attachments/assets/e12c1e68-3e24-4eee-b73e-8fa1bbeaa60e" />
 
+***
+
 ## 🧠 Conclusiones Personales
 Este proyecto demostró la aplicación exitosa de los fundamentos de Spring Boot para construir una aplicación modular y adaptable.
 
-Estructura y Acoplamiento: Se implementó una arquitectura limpia utilizando estereotipos (@Service, @Repository) y la inyección de dependencias por constructor, lo que resultó en un código desacoplado y fácil de mantener.
+* Estructura y Acoplamiento: Se implementó una arquitectura limpia utilizando estereotipos (@Service, @Repository) y la inyección de dependencias por constructor, lo que resultó en un código desacoplado y fácil de mantener.
 
-Adaptabilidad con Profiles: El uso de Profiles (dev y prod) y el manejo de propiedades con @Value permitió adaptar la aplicación de forma dinámica, cambiando configuraciones (límites de tareas) y el comportamiento del servicio (MensajeService condicional) según el entorno activo.
+* Adaptabilidad con Profiles: El uso de Profiles (dev y prod) y el manejo de propiedades con @Value permitió adaptar la aplicación de forma dinámica, cambiando configuraciones (límites de tareas) y el comportamiento del servicio (MensajeService condicional) según el entorno activo.
 
-Integración: La interfaz CommandLineRunner se utilizó eficazmente para orquestar la lógica de inicio y demostrar la integración de todos los componentes inyectados.
+* Integración: La interfaz CommandLineRunner se utilizó eficazmente para orquestar la lógica de inicio y demostrar la integración de todos los componentes inyectados.
 
 En resumen, el trabajo práctico cumplió con el objetivo de simular una práctica de desarrollo profesional, enfatizando el diseño modular y la gestión flexible de entornos.
+
+***
 
 ## 🧑‍💻 Autor
 Tiago Pínfari
